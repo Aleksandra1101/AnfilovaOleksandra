@@ -1,0 +1,50 @@
+import re
+def get_id(line):
+    result = re.split(r',', line, maxsplit=1)
+    product_id = re.findall(r'\w+', result[0])
+    return product_id[0], result[1]
+def get_category(line):
+    result = re.split(r',', line, maxsplit=1)
+    product_category_name = re.findall(r"\w+", result[0])
+    return product_category_name[0], result[1]
+def get_product_name_lenght(line):
+    result = re.split(r',', line, maxsplit=1)
+    product_name_lenght = re.findall(r"\d+", result[0])
+    return product_name_lenght[0], result[1]
+def get_product_description_lenght(line):
+    result = re.split(r',', line, maxsplit=1)
+    get_product_description_lenght = re.findall(r'\d+', result[0])
+    return get_product_description_lenght[0], result[1]
+
+try:
+    fl = open("C:\\Users\\Александра\\PycharmProjects\\workshop6\\data\\olist_products_dataset.csv", "r+")
+    a = fl.readline().rstrip()
+    line_number = 1
+    for line in fl:
+        line = line.strip().rstrip()
+        line_number += 1
+        if line == "\n":
+            continue
+  
+
+
+        if line_number>10:
+            break
+except IOError as error_name:
+    print("Error in file", error_name)
+
+
+dataset = {}
+head = f1.readline().strip().split(",")
+product_id_index = head.index("product_id")
+category_index = head.index("product_category_name")
+product_name_lenght_index = head.index("product_name_lenght")
+product_description_index = head.index("product_description")
+
+for line in f1:
+    data = line.strip().split(',')
+    if data[category_index] not in dataset:
+        dataset[data[category_index]] = {}
+    if data[product_id_index] not in dataset[data[category_index]]:
+        dataset[data[category_index]][data[product_id_index]] = {"product_name_lenght" :data[product_name_lenght_index],
+                                                                 "product_description":data[product_description_index]}
