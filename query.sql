@@ -1,8 +1,13 @@
 --task1
-SELECT country, count(title) as films_count
-FROM movies
-WHERE title is not null
-group by country
+SELECT 
+
+        film_country.country_name_fk,
+        count(film.title) as film_count
+        
+      FROM
+        film_country join film
+            ON film_country.filmtv_id_fk = film.filmtv_id
+        GROUP BY film_country.country_name_fk
 
 
 --task2
