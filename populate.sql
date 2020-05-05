@@ -132,7 +132,7 @@ INSERT INTO film_country(filmtv_id_fk, country_name_fk)
 VALUES(25826, "Soviet Union' )
 
 INSERT INTO film_country(filmtv_id_fk, country_name_fk)
-VALUES(18, "Greece' )
+VALUES(18, 'Greece' )
 
 
 
