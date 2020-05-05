@@ -108,7 +108,7 @@ INSERT INTO film_country(filmtv_id_fk, country_name_fk)
 VALUES(3740, 'Canada');
 
 INSERT INTO film_country(filmtv_id_fk, country_name_fk)
-VALUES(8004,  'United States');
+VALUES(47,  'United States');
 
 INSERT INTO film_country(filmtv_id_fk, country_name_fk)
 VALUES(68, 'Italy');
