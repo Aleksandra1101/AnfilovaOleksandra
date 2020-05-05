@@ -10,10 +10,14 @@ connection = cx_Oracle.connect(username,password, database)
 cursor = connection.cursor()
 
 query1 = '''
-SELECT country, count(title) as films_count
-FROM movies
-WHERE title is not null
-group by country
+SELECT 
+
+        film_country.country_name_fk,
+        count(film.title) as film_count
+      FROM
+        film_country join film
+            ON film_country.filmtv_id_fk = film.filmtv_id
+        GROUP BY film_country.country_name_fk
 '''
 cursor.execute(query1)
 
@@ -24,7 +28,7 @@ for row in cursor:
 
 query2 = '''
 SELECT country,ROUND(COUNT(title)*100/t.count, 2) AS persent
-FROM movies,(SELECT COUNT(title) AS count FROM movies)t  
+FROM film,(SELECT COUNT(title) AS count FROM film)t  
 GROUP BY  country, t.count 
 '''
 cursor.execute(query2)
@@ -38,10 +42,9 @@ for row in cursor:
 query3 = '''
 
 SELECT year, count(title) as quantity_films
-FROM movies
+FROM film
 group by year
-order by year  
-
+ 
 '''
 cursor.execute(query3)
 
