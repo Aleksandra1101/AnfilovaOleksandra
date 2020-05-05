@@ -46,7 +46,7 @@ country = []
 persent = []
 query2 = '''
 SELECT country,ROUND(COUNT(title)*100/t.count, 2) AS persent
-FROM movies,(SELECT COUNT(title) AS count FROM movies)t  
+FROM film,(SELECT COUNT(title) AS count FROM film)t  
 GROUP BY  country, t.count 
 '''
 cursor.execute(query2)
@@ -66,7 +66,7 @@ quantity_films = []
 
 query3 = '''
 SELECT year, count(title) as quantity_films
-FROM movies
+FROM film
 group by year
 order by year
 '''
