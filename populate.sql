@@ -24,11 +24,17 @@ VALUES('Spain');
 INSERT INTO country(country_name)
 VALUES('Greece');
 
+INSERT INTO country(country_name)
+VALUES('Russia');
+
+INSERT INTO country(country_name)
+VALUES('Soviet Union')
+
 INSERT INTO film(FILMTV_ID,TITLE,YEAR,GENRE,duration,country, director, actors, avg_vote,VOTES)
 VALUES(3740, 'Jesus de Montreal', 1988 'Drama',	109, 'Canada', 'Denys Arcand', 'Lothaire Bluteau, Catherine Wilkening', 7.5, 12);
 
 INSERT INTO film(FILMTV_ID,TITLE,YEAR,GENRE,duration,country, director, actors, avg_vote,VOTES)
-VALUES(8004, 'Calendar', 1993, 'Drama', 70, 'Canada', 'Atom Egoyan', 'ArsinГe Khanjian, Atom Egoyan, Ashot Adamyan', 6.3, 7);
+VALUES(8004, 'Calendar', 1993, 'Drama', 70, 'Great Britain', 'Atom Egoyan', 'ArsinГe Khanjian, Atom Egoyan, Ashot Adamyan', 6.3, 7);
 
 INSERT INTO film(FILMTV_ID,TITLE,YEAR,GENRE,duration,country, director, actors, avg_vote,VOTES)
 VALUES(3514, 'Head on', 1980, 'Drama', 83, 'Canada',	'Michael Grant', 	'Sally Kellerman, John Huston, Stephen Lack',	6.0,	2);
@@ -58,7 +64,7 @@ INSERT INTO film(FILMTV_ID,TITLE,YEAR,GENRE,duration,country, director, actors, 
 VALUES(175, 'Al acecho',	1988, 	'Adventure',	88, 	'Spain',	'Gerardo Herrero',	'Giuliano Gemma, Conrado Sanmartin, Eduardo Calvo, Mario Gas',	4.0,	1);
 
 INSERT INTO film(FILMTV_ID,TITLE,YEAR,GENRE,duration,country, director, actors, avg_vote,VOTES)
-VALUES(3824, 'Laberinto de pasiones',	1982,	'Comedy',	100,	'Spain',	'Pedro Almodіvar', 	'Imanol Arias, Cecilia Roth, Antonio Banderas, Helga LinГ',	6.6,	37);
+VALUES(3824, 'Laberinto de pasiones',	1982,	'Comedy',	100,	'France',	'Pedro Almodіvar', 	'Imanol Arias, Cecilia Roth, Antonio Banderas, Helga LinГ',	6.6,	37);
 
 INSERT INTO film(FILMTV_ID,TITLE,YEAR,GENRE,duration,country, director, actors, avg_vote,VOTES)
 VALUES(15764,  'Taxi',	1996,	'Drama',	110,	'Spain',	'Carlos Saura', 	'Ingrid Rubio, Carlos Fuentes, Agata Lys',	5.0,	2);
@@ -67,7 +73,7 @@ INSERT INTO film(FILMTV_ID,TITLE,YEAR,GENRE,duration,country, director, actors, 
 VALUES(21183, 'La comunidad',	2000,	'Grotesque',	105,	'Spain',	'Alex de la Iglesia',	'Carmen Maura, Eduardo Antua, JesГєs Bonilla, Paca Gabaldіn',	7.5,	100);
 
 INSERT INTO film(FILMTV_ID,TITLE,YEAR,GENRE,duration,country, director, actors, avg_vote,VOTES)
-VALUES(44430, 'La endemoniada',	1975,	'Horror',	90, 	'Spain',	'Amando de Ossorio',	'Julian Mateos, MariГn Salgado, Fernando Sancho, Lone Fleming, Гngel del Pozo, Kali Hansa, Daniel Martin, Tota Alba, Roberto Camardiel, Mara Kosty',	5.0,	9);
+VALUES(44430, 'La endemoniada',	1975,	'Horror',	90, 	'Japan',	'Amando de Ossorio',	'Julian Mateos, MariГn Salgado, Fernando Sancho, Lone Fleming, Гngel del Pozo, Kali Hansa, Daniel Martin, Tota Alba, Roberto Camardiel, Mara Kosty',	5.0,	9);
 
 INSERT INTO film(FILMTV_ID,TITLE,YEAR,GENRE,duration,country, director, actors, avg_vote,VOTES)
 VALUES(3777, 'Kashtanka',	1975,	'Drama',	90, 	'Soviet Union', 	'Roman Balayan',	'Oleg Tabakov', 	6.0,	1);
@@ -88,13 +94,13 @@ INSERT INTO film(FILMTV_ID,TITLE,YEAR,GENRE,duration,country, director, actors, 
 VALUES(37480, 'Dnevnoy dozor',	2006,	'Horror',	132,	'Russia',	'Timur Bekmambetov',	'Konstantin Khabenskij, Mariya Poroschina, Galina Tyunina, Zhanna Friske, Vladimir Menshov',	5.6,	23);
 
 INSERT INTO film(FILMTV_ID,TITLE,YEAR,GENRE,duration,country, director, actors, avg_vote,VOTES)
-VALUES(18, 'Diner', 	1982, 	'Comedy',	95, 	'United States',	'Barry Levinson',	'Mickey Rourke, Steve Guttenberg, Ellen Barkin, Daniel Stern, Kevin Bacon, Timothy Daly, Paul Reiser, Kelle Kipp, Colette Blonigan',	7.2	, 15);
+VALUES(18, 'Diner', 	1982, 	'Comedy',	95, 	'Greece',	'Barry Levinson',	'Mickey Rourke, Steve Guttenberg, Ellen Barkin, Daniel Stern, Kevin Bacon, Timothy Daly, Paul Reiser, Kelle Kipp, Colette Blonigan',	7.2	, 15);
 
 INSERT INTO film(FILMTV_ID,TITLE,YEAR,GENRE,duration,country, director, actors, avg_vote,VOTES)
 VALUES(47, 'About Last Night',	1986,	'Comedy',	113,	'United States',	'Edward Zwick',	 'Rob Lowe, Demi Moore, James Belushi, Elizabeth Perkins, George DiCenzo, Robin Thomas, Megan Mullally',	5.8,	30);
 
 INSERT INTO film(FILMTV_ID,TITLE,YEAR,GENRE,duration,country, director, actors, avg_vote,VOTES)
-VALUES(55, 'Back to School',	1986,	'Comedy',	100,	'United States',	'Alan Metter',	'Rodney Dangerfield, Keith Gordon, Sally Kellerman, Robert Downey jr., Burt Young, Ned Beatty, Terry Farrell, Paxton Whitehead, M. Emmet Walsh, Adrienne Barbeau',	6.6,	16);
+VALUES(55, 'Back to School',	1986,	'Comedy',	100,	'Russia',	'Alan Metter',	'Rodney Dangerfield, Keith Gordon, Sally Kellerman, Robert Downey jr., Burt Young, Ned Beatty, Terry Farrell, Paxton Whitehead, M. Emmet Walsh, Adrienne Barbeau',	6.6,	16);
   
 
 
@@ -102,73 +108,32 @@ INSERT INTO film_country(filmtv_id_fk, country_name_fk)
 VALUES(3740, 'Canada');
 
 INSERT INTO film_country(filmtv_id_fk, country_name_fk)
-VALUES(8004,  'Canada');
-
-INSERT INTO film_country(filmtv_id_fk, country_name_fk)
-VALUES(3514, 'Canada');
-
-INSERT INTO film_country(filmtv_id_fk, country_name_fk)
-VALUES(19005, 'Canada');
-
-INSERT INTO film_country(filmtv_id_fk, country_name_fk)
-VALUES(23376, 'Canada');
+VALUES(8004,  'United States');
 
 INSERT INTO film_country(filmtv_id_fk, country_name_fk)
 VALUES(68, 'Italy');
 
 INSERT INTO film_country(filmtv_id_fk, country_name_fk)
-VALUES(64, 'Italy');
+VALUES(3824, 'France');
 
 INSERT INTO film_country(filmtv_id_fk, country_name_fk)
-VALUES(96, 'Italy');
+VALUES(8004, 'Great Britain');
 
 INSERT INTO film_country(filmtv_id_fk, country_name_fk)
-VALUES(105, 'Italy');
+VALUES(44430, 'Japan');
 
 INSERT INTO film_country(filmtv_id_fk, country_name_fk)
-VALUES(108, 'Italy');
+VALUES(175, 'Spain');
 
 INSERT INTO film_country(filmtv_id_fk, country_name_fk)
-VALUES(175,	'Spain');
+VALUES(55, 'Russia');
 
 INSERT INTO film_country(filmtv_id_fk, country_name_fk)
-VALUES(3824,'Spain');
+VALUES(25826, "Soviet Union' )
 
 INSERT INTO film_country(filmtv_id_fk, country_name_fk)
-VALUES(15764, 'Spain');
+VALUES(18, "Greece' )
 
-INSERT INTO film_country(filmtv_id_fk, country_name_fk)
-VALUES(21183, 'Spain');
-
-INSERT INTO film_country(filmtv_id_fk, country_name_fk)
-VALUES(44430,'Spain');
-
-INSERT INTO film_country(filmtv_id_fk, country_name_fk)
-VALUES(3777,'Soviet Union');
-
-INSERT INTO film_country(filmtv_id_fk, country_name_fk)
-VALUES(8279, 'Soviet Union');
-
-INSERT INTO film_country(filmtv_id_fk, country_name_fk)
-VALUES(17879, 'Soviet Union');
-
-INSERT INTO film_country(filmtv_id_fk, country_name_fk)
-VALUES(25826, 'Soviet Union');
-
-INSERT INTO film_country(filmtv_id_fk, country_name_fk)
-VALUES(119903, 'Russia');
-
-INSERT INTO film_country(filmtv_id_fk, country_name_fk)
-VALUES(37480, 'Russia');
-
-INSERT INTO film_country(filmtv_id_fk, country_name_fk)
-VALUES(18, 'United States');
-
-INSERT INTO film_country(filmtv_id_fk, country_name_fk)
-VALUES(47, 'United States');
-
-INSERT INTO film_country(filmtv_id_fk, country_name_fk)
-VALUES(55, 'United States')
 
 
 
