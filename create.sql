@@ -1,4 +1,4 @@
-alter table countries add constraint countries_pk primary key(country);
+
 create table film_country(
 title_fk VARCHAR2(128 BYTE),
 country_fk VARCHAR2(26 BYTE)
