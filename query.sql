@@ -14,14 +14,14 @@ SELECT
 SELECT 
     country, 
     ROUND(COUNT(title)*100/t.count, 2) AS persent
-    FROM movies,
+    FROM film,
     (SELECT COUNT(title) AS count
-    FROM movies)t  
+    FROM film)t  
 GROUP BY  country,
         t.count
         
 --task3
 SELECT year, count(title) as quantity_films
-FROM movies
+FROM film
 group by year
 order by year;
