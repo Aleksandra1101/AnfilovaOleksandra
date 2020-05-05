@@ -83,7 +83,6 @@ query3 = '''
 SELECT year, count(title) as quantity_films
 FROM film
 group by year
-order by year
 '''
 cursor.execute(query3)
 for row in cursor.fetchall():
