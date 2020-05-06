@@ -30,7 +30,7 @@ country_name_fk VARCHAR(26 BYTE) not Null
 ALTER TABLE  film_country
   ADD CONSTRAINT film_country_pk PRIMARY KEY (filmtv_id_fk, country_name_fk);  
 ALTER TABLE film_country
-  ADD CONSTRAINT country_pk FOREIGN KEY (country_name_fk) REFERENCES country (country_name);
+  ADD CONSTRAINT country_fk FOREIGN KEY (country_name_fk) REFERENCES country (country_name);
 ALTER TABLE  film_country
-  ADD CONSTRAINT film_pk FOREIGN KEY (filmtv_id_fk) REFERENCES film (filmtv_id);
+  ADD CONSTRAINT film_fk FOREIGN KEY (filmtv_id_fk) REFERENCES film (filmtv_id);
 
